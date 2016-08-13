@@ -1,0 +1,67 @@
+<div>
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="">
+                    <img class="img-responsive" src="<?php echo $this->basePath('customer/images/slider/3.jpg'); ?>" alt="" />
+                    <div class="carousel-caption text-justify" >
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6 pull-right" style="background-color: black; opacity:  0.7;padding-bottom: 15px">
+                            <h3 style=";color: #EC971F">Soyez le meilleur</h3> 
+                            <p>Télécharger les épreuves, les TDs des meilleurs établissements de l'Afrique ainsi que leurs corrections.</p> 
+                            <a href="#" class="btn btn-primary">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="">
+                    <img class="img-responsive" src="<?php echo $this->basePath('customer/images/slider/4.jpg'); ?>" alt="" />
+                    <div class="carousel-caption text-justify" >
+                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6" style="background-color: black; opacity:  0.7;padding-bottom: 15px;">
+                            <h3 style=";color: #EC971F">Faites vos recherches</h3> 
+                            <p>Simplifiez vos études avec Schoolfiles. Télécharger les épreuves, traitez les et comparez vos résultats aux corrections.</p> 
+                            <a href="#" class="btn btn-primary">Voir plus</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Set the third background image using inline CSS below. -->
+            <div class="item">
+                <img class="img-responsive" src="<?php echo $this->basePath('customer/images/slider/5.jpg'); ?>" alt="" />
+                <div class="carousel-caption text-justify">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 right" style="background-color: black; opacity:  0.7;padding-bottom: 15px">
+                        <h3 style=";color: #EC971F">Boostez vos connaissances</h3> 
+                        <p>Une solution aux partages des ressources &eacute;ducatives sur l'&eacute;tendu du territoire.</p> 
+                        <a href="#" class="btn btn-primary">Voir plus</a></br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+</div>
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+</script>
