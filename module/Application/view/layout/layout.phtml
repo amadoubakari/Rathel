@@ -29,7 +29,6 @@
                 ->prependFile($this->basePath('js/html5shiv.min.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
         ;
         ?>
-
     </head>
     <body>
         <div>
@@ -51,11 +50,14 @@
             </div>
             <hr>
             <div class="col-xs-12">
-                <?php echo $this->render('contact.phtml'); ?>
+                <?php echo $this->render('service.phtml'); ?>
+            </div>
+            <div class="col-xs-12">
+                <?php //echo $this->render('contact.phtml'); ?>
             </div>
             <div class="col-xs-12">
                 <?php echo $this->render('footer.phtml'); ?>
-            </div>
+            </div>            
         </div>              
     </body>
 </html>
