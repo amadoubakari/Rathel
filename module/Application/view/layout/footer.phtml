@@ -4,7 +4,7 @@ echo $this->headLink()
 ?>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-<div style="opacity: 0.8">  
+<div>  
     <!-- The content of your page would go here. -->
     <div class="footer-distributed" style="margin: 0; padding: 55px">
         <div class="footer-left">
@@ -59,10 +59,10 @@ echo $this->headLink()
         <div class="col-xs-5"></div>
         <div class="col-xs-3">
             <ul class="list-unstyled list-inline">
-                <li><a href="#">Services</a><span>&nbsp;|&nbsp;</span></li>
-                <li><a href="#">Réalisations</a><span>&nbsp;|&nbsp;</span></li>
-                <li><a href="#">Sources</a><span>&nbsp;|&nbsp;</span></li>
-                <li><a href="#">Equipe</a><span>&nbsp;|&nbsp;</span></li>
+                <li><a href="<?php echo $this->url('application/default', array('controller' => 'Index', 'action' => 'service')); ?>">Services</a><span>&nbsp;|&nbsp;</span></li>
+                <li><a href="<?php echo $this->url('application/default', array('controller' => 'Index', 'action' => 'realisation')); ?>">Réalisations</a><span>&nbsp;|&nbsp;</span></li>
+                <li><a href="<?php echo $this->url('application/default', array('controller' => 'Index', 'action' => 'index')); ?>">Sources</a><span>&nbsp;|&nbsp;</span></li>
+                <li><a href="<?php echo $this->url('application/default', array('controller' => 'Index', 'action' => 'index')); ?>">Equipe</a><span>&nbsp;|&nbsp;</span></li>
             </ul>
         </div>
     </div>    

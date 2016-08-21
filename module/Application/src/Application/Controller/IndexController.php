@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -12,10 +13,22 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class IndexController extends AbstractActionController
-{
-    public function indexAction()
-    {
+class IndexController extends AbstractActionController {
+
+    public function indexAction() {
         return new ViewModel();
     }
+
+    public function serviceAction() {
+        return new ViewModel();
+    }
+
+    public function contactAction() {
+        return new ViewModel();
+    }
+
+    public function realisationAction() {
+        return new ViewModel();
+    }
+
 }
