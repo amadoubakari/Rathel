@@ -26,16 +26,15 @@ and open the template in the editor.
         <div class="container">
             <div class="row">
                 <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-                    <h2>Nos REALISATIONS</h2>
+                    <h2>NOS REALISATIONS</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
                 </div>
             </div>
             <div class="blog-posts">
                 <div class="row">
                     <div>
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-8 wow fadeInUp center-block" data-wow-duration="1000ms" data-wow-delay="600ms">
-                            <div class="entry-header">
+                        <div class="col-sm-9 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                            <div class="center-block">
                                 <h3><a href="#">GP-CICM (Application de gestion de personnels du Coeur Immaculée Marie)</a></h3>
                                 <span class="date">June 26, 2016</span>
                                 <span class="cetagory">in <strong>Photography</strong></span>
@@ -48,22 +47,26 @@ and open the template in the editor.
                                         <li data-target="#post-carousel" data-slide-to="2"></li>
                                         <li data-target="#post-carousel" data-slide-to="3"></li>
                                         <li data-target="#post-carousel" data-slide-to="4"></li>
+                                        <li data-target="#post-carousel" data-slide-to="5"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco1.PNG'); ?>" alt=""></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco1.jpg'); ?>" alt="" data-toggle="modal" data-target="#myModal"></a>
                                         </div>
                                         <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco2.PNG'); ?>" alt=""></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco2.jpg'); ?>" alt="" data-toggle="modal" data-target="#myModal"></a>
                                         </div>
                                         <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco3.PNG'); ?>" alt=""></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco3.jpg'); ?>" alt="" data-toggle="modal" data-target="#myModal"></a>
                                         </div>
                                         <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco4.PNG'); ?>" alt=""></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco4.jpg'); ?>" data-toggle="modal" data-target="#myModal" alt=""></a>
                                         </div>
                                         <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco5.PNG'); ?>" alt=""></a>
+                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco5.jpg'); ?>" data-toggle="modal" data-target="#myModal" alt=""></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco6.jpg'); ?>" data-toggle="modal" data-target="#myModal" alt=""></a>
                                         </div>
                                     </div>                               
                                     <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -81,45 +84,65 @@ and open the template in the editor.
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                             </div>
                         </div>
-                        <div class="col-sm-2"></div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                        <div class="post-thumb">
-                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/service/img/mobile (1).png'); ?>" alt=""></a> 
-                            <div class="post-meta">
-                                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                                <span><i class="fa fa-heart"></i> 0 Likes</span> 
-                            </div>
-                            <div class="post-icon">
-                                <i class="fa fa-pencil"></i>
-                            </div>
+                        <div class="col-sm-3">
+                            <h3>Fonctionnalités du CICMACO</h3>
+                            <hr>
+                            <ul>
+                                <li>Gestion du personnel</li> <hr>
+                                <li>Gestion des événements</li> <hr>
+                                <li>Gestion des dossiers</li> <hr>
+                                <li>Notifications par mail</li> <hr>
+                                <li>Impression des CV</li> <hr>
+                                <li>Impression de modèle de format</li> <hr>
+                                <li>Gestion des historiques</li> <hr>
+                            </ul>
                         </div>
-                        <div class="entry-header">
-                            <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-                            <span class="date">June 26, 2014</span>
+                    </div> 
+                </div> 
+                <div>
+                    <div class="col-sm-3">
+                        <h3>Fonctionnalités du CICMACO</h3>
+                        <hr>
+                        <ul>
+                            <li>Gestion du personnel</li> <hr>
+                            <li>Gestion des événements</li> <hr>
+                            <li>Gestion des dossiers</li> <hr>
+                            <li>Notifications par mail</li> <hr>
+                            <li>Impression des CV</li> <hr>
+                            <li>Impression de modèle de format</li> <hr>
+                            <li>Gestion des historiques</li> <hr>
+                        </ul>
+                    </div>
+                    <div class="col-sm-9 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="center-block">
+                            <h3><a href="#">GP-CICM (Application de gestion de personnels du Coeur Immaculée Marie)</a></h3>
+                            <span class="date">June 26, 2016</span>
                             <span class="cetagory">in <strong>Photography</strong></span>
                         </div>
-                        <div class="entry-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="post-thumb">
                             <div id="post-carousel"  class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
                                     <li data-target="#post-carousel" data-slide-to="1"></li>
                                     <li data-target="#post-carousel" data-slide-to="2"></li>
+                                    <li data-target="#post-carousel" data-slide-to="3"></li>
+                                    <li data-target="#post-carousel" data-slide-to="4"></li>
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/service/img/mobile (1).png'); ?>" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco1.PNG'); ?>" alt=""></a>
                                     </div>
                                     <div class="item">
-                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/service/img/mobile (1).png'); ?>" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco2.PNG'); ?>" alt=""></a>
                                     </div>
                                     <div class="item">
-                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/service/img/mobile (1).png'); ?>" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco3.PNG'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco4.PNG'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco5.PNG'); ?>" alt=""></a>
                                     </div>
                                 </div>                               
                                 <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -132,91 +155,99 @@ and open the template in the editor.
                             <div class="post-icon">
                                 <i class="fa fa-picture-o"></i>
                             </div>
-                        </div>
-                        <div class="entry-header">
-                            <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-                            <span class="date">June 26, 2014</span>
-                            <span class="cetagory">in <strong>Photography</strong></span>
-                        </div>
+                        </div>                            
                         <div class="entry-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
                     </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+                </div>
+                <div>
+                    <div class="col-sm-9 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="center-block">
+                            <h3><a href="#">GP-CICM (Application de gestion de personnels du Coeur Immaculée Marie)</a></h3>
+                            <span class="date">June 26, 2016</span>
+                            <span class="cetagory">in <strong>Photography</strong></span>
+                        </div>
                         <div class="post-thumb">
-                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/service/img/mobile (1).png'); ?>" alt=""></a>
+                            <div id="post-carousel"  class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#post-carousel" data-slide-to="1"></li>
+                                    <li data-target="#post-carousel" data-slide-to="2"></li>
+                                    <li data-target="#post-carousel" data-slide-to="3"></li>
+                                    <li data-target="#post-carousel" data-slide-to="4"></li>
+                                    <li data-target="#post-carousel" data-slide-to="5"></li>
+                                    <li data-target="#post-carousel" data-slide-to="6"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/mobile/mobile1.jpg'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/mobile/mobile2.jpg'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/mobile/mobile3.jpg'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/mobile/mobile4.jpg'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/mobile/mobile5.jpg'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/mobile/mobile6.jpg'); ?>" alt=""></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/mobile/mobile7.jpg'); ?>" alt=""></a>
+                                    </div>
+                                </div>                               
+                                <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                                <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                            </div>                            
                             <div class="post-meta">
                                 <span><i class="fa fa-comments-o"></i> 3 Comments</span>
                                 <span><i class="fa fa-heart"></i> 0 Likes</span> 
                             </div>
                             <div class="post-icon">
-                                <i class="fa fa-video-camera"></i>
+                                <i class="fa fa-picture-o"></i>
                             </div>
-                        </div>
-                        <div class="entry-header">
-                            <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-                            <span class="date">June 26, 2014</span>
-                            <span class="cetagory">in <strong>Photography</strong></span>
-                        </div>
+                        </div>                            
                         <div class="entry-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                         </div>
-                    </div>   
-                    <div>
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-8 wow fadeInUp center-block" data-wow-duration="1000ms" data-wow-delay="600ms">
-                            <div class="entry-header">
-                                <h3><a href="#">GP-CICM (Application de gestion de personnels du Coeur Immaculée Marie)</a></h3>
-                                <span class="date">June 26, 2016</span>
-                                <span class="cetagory">in <strong>Photography</strong></span>
-                            </div>
-                            <div class="post-thumb">
-                                <div id="post-carousel"  class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#post-carousel" data-slide-to="1"></li>
-                                        <li data-target="#post-carousel" data-slide-to="2"></li>
-                                        <li data-target="#post-carousel" data-slide-to="3"></li>
-                                        <li data-target="#post-carousel" data-slide-to="4"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco1.PNG'); ?>" alt=""></a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco2.PNG'); ?>" alt=""></a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco3.PNG'); ?>" alt=""></a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco4.PNG'); ?>" alt=""></a>
-                                        </div>
-                                        <div class="item">
-                                            <a href="#"><img class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco5.PNG'); ?>" alt=""></a>
-                                        </div>
-                                    </div>                               
-                                    <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                                    <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
-                                </div>                            
-                                <div class="post-meta">
-                                    <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                                    <span><i class="fa fa-heart"></i> 0 Likes</span> 
-                                </div>
-                                <div class="post-icon">
-                                    <i class="fa fa-picture-o"></i>
-                                </div>
-                            </div>                            
-                            <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-2"></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>Fonctionnalités du CICMACO</h3>
+                        <hr>
+                        <ul>
+                            <li>Gestion du personnel</li> <hr>
+                            <li>Gestion des événements</li> <hr>
+                            <li>Gestion des dossiers</li> <hr>
+                            <li>Notifications par mail</li> <hr>
+                            <li>Impression des CV</li> <hr>
+                            <li>Impression de modèle de format</li> <hr>
+                            <li>Gestion des historiques</li> <hr>
+                        </ul>
                     </div>
                 </div>
-                <div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <a href="#" class="btn-loadmore"><i class="fa fa-repeat"></i> Load More</a>
-                </div>                
+            </div>
+            <div class="modal  col-lg-12" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content col-lg-12">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img width="100%" height="100%" class="img-responsive" src="<?php echo $this->basePath('customer/realisation/images/cicmaco/cicmaco4.jpg'); ?>" alt="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
