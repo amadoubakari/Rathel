@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 sept. 2016, 12:26:37
+    Author     : AMADOU BAKARI
+*/
+
+h3{
+    color: black;
+    opacity: 0.8;
+    font-size: 36px;
+    //font-weight: bold;
+    font-family: 'Scheherazade', serif;
+}
+
+.cv-title{
+    color: blue;
+    text-align: center;
+    font-family: 'Scheherazade', serif;
+    font-size: 30px;
+    border-bottom: 4px #F4F4F4 solid;
+    text-transform: uppercase
+}
+.cv-footer{
+    color: blue;
+    text-align: left;
+    font-family: 'Scheherazade', serif;
+    font-size: 26px;
+    border-top: 4px #F4F4F4 solid;
+    text-transform: uppercase
+}
+ul li{
+    color: black;
+    opacity: 0.8;
+    text-align: left;
+    font-family: 'Scheherazade', serif;
+    font-size: 26px;
+    //font-weight: bold
+}
+ul li span{
+    color: black;
+    opacity: 0.6;
+    text-align: left;
+    font-family: 'Scheherazade', serif;
+    font-size: 30px;
+    font-style: normal;
+}
+
+div h2{
+    color: black;
+    opacity: 0.8;
+    text-align: center;
+    font-family: 'Scheherazade', serif;
+    font-size: 30px;
+    //font-weight: bold
+}
+
+div ul li a{
+    color: black;
+    /*    opacity: 0.6;*/
+    text-align: left;
+    font-family: 'Quintessential', cursive;
+    font-size: 15px;
+    font-style: normal;
+}
+
+//les messages de réception 
+.msg-header{
+    color: black;
+    /*    opacity: 0.6;*/
+    text-align: left;
+    font-family: 'Quintessential', cursive;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+}

@@ -35,8 +35,8 @@ class IndexController extends AbstractActionController {
         $this->layout('layout/inboxmsg');
         return new ViewModel();
     }
-     public function composeAction() {
-        $this->layout('layout/inboxmsg');
+
+    public function teamAction() {
         return new ViewModel();
     }
 

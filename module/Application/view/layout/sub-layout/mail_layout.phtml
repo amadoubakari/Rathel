@@ -34,24 +34,26 @@ echo $this->doctype();
 
     </head>
     <body>
-        <div class="col-xs-12">
-            <?php echo $this->render('layout/header.phtml'); ?>
-        </div>
-        <div class="col-xs-12">
-            <?php echo $this->render('layout/navbar.phtml'); ?>
-        </div>
-        <div class="col-xs-12">
-            <br><br>
-            <div class="col-xs-3">
-                 <?php echo $this->render('layout/sub-layout/left.phtml'); ?>
+        <div class="row">
+            <div class="col-xs-12">
+                <?php echo $this->render('layout/header.phtml'); ?>
             </div>
-            <div class="col-xs-9">
-                <?php echo $this->content; ?>
+            <div class="col-xs-12">
+                <?php echo $this->render('layout/navbar.phtml'); ?>
             </div>
-            <br><br>
-        </div>
-        <div class="col-xs-12">
-            <?php echo $this->render('layout/footer.phtml'); ?>
-        </div>
+            <div class="col-xs-12">
+                <br><br>
+                <div class="col-xs-3">
+                    <?php echo $this->render('layout/sub-layout/left.phtml'); ?>
+                </div>
+                <div class="col-xs-9">
+                    <?php echo $this->content; ?>
+                </div>
+                <br><br>
+            </div>
+            <div class="col-xs-12">
+                <?php echo $this->render('layout/footer.phtml'); ?>
+            </div>
+        </div>        
     </body>
 </html>
